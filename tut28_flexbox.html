@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.container{
+    height:544px;
+    width: 100%;
+    border: 2px solid black;
+
+  /* below are flex-container property only  */
+
+
+    display: flex;
+    /* iniaitilze the flex box ,ie container become flex container and all item inside it became flex item */
+
+    /* flex properties for flez container  */
+
+    /* flex-direction: row  (by default) */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+
+
+  /* to make responsive  */
+  /* flex-wrap:nowrap;  (by default); */
+    /* flex-wrap: wrap; */
+
+
+    /* flex-flow is a short hand to write both flex-direction:  and flex-wrap in single line; */
+    /* here row-reverse  means flex-direction:  and wrap is flex-wrap: ;; */
+    /* flex-flow: row-reverse wrap; */
+ 
+      /* justify-content: center; */
+    /* align all item horizontally  at center */
+
+    /* justify-content: space-evenly; */
+    /* from border to in-between boxes ==space same or even  */
+   
+
+    /* justify-content: space-between; */
+    /* equal space between boxes only  */
+
+    /* justify-content: space-around; */
+    /* equal space between the boxes  */ 
+
+
+    /* align-items: center; */
+    /* align vertical at center */
+
+    /* align-items: flex-end; */
+
+    /* align-items: flex-start; */
+    /* default */
+
+
+    /* align-items: stretch; */
+
+    /* align-items: center; */
+    /* align vertical at center */
+
+    /* use of flex-wrap is necesaary in stretch */
+
+
+
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    margin: 10px;
+    padding: 3px;
+    border: 2px solid green;
+
+}
+
+
+#item-1{
+/* flex propery for item  */
+
+/* order: higher the order , later it shows up in the container */
+order: 4;
+
+
+/* flex-grow: 5; */
+/* it will grow at 5x compared to other when strechted  */
+
+/* flex-shrink: 4; */
+
+/* it will shrink at 5x compared to other when strechted  */
+}
+
+#item-2{
+
+/* flex propery for item  */
+/* order: 3; */
+
+flex-basis: 110px;
+/* if flex-direction: row ; then flex-basis will impact width 
+if flex-direction: column; then flex-basis will impact height */
+
+
+
+}
+
+
+
+#item-3{
+/* flex propery for item  */
+/* order: 2; */
+
+flex :2 2 230px;
+/* flex :grow  shrink flex-basis  */
+
+align-self: flex-start;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1>this is flexbox tutorial</h1>
+    <div class="container">
+
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third  box</div>
+        <!-- <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Sixth box</div> -->
+
+
+
+    </div>
+    
+</body>
+</html>

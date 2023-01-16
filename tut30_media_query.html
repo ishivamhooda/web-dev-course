@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: red;
+            font-size: 30px;
+            text-align: center;
+            display: none;
+        }
+
+        @media only screen and (max-width:300px) {
+
+            /* here value of max-width means this code will be active when width is between min (0) to max 500
+    code active when BETWEEN MIN AND MAX  */
+            #box-1 {
+                display: block;
+                background-color: brown;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            #box-2 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:600px) {
+            #box-3 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media (min-width:600px) and (max-width:700px) {
+            #box-4 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">i am an iphone </div>
+    <div class="box" id="box-2">i am an laptop</div>
+    <div class="box" id="box-3">i am an tablet</div>
+    <div class="box" id="box-4">i am an widescreen computer</div>
+</body>
+
+</html>
