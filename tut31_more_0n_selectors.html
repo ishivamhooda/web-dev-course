@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+
+    <style>
+        h1 {
+
+            background-color: red;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+        }
+
+
+
+
+        /* div p {  div ka andar jitna pa p ha }
+div li p { div ka andar li ka b andar jo p ha } */
+
+
+        /* div > p {
+    it will act only if div ka andar direct p or simple when div is the parent of p 
+} */
+
+
+      div + p {
+        div ka {
+            div ka ppichla element p ho , 
+            div ka previous element pa apply 
+        }
+      }
+
+        div li p {
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> this is more on selectors</h1>
+
+    <div class="container">
+
+        <div class="row">
+            <p>this is para 1</p>
+            <ul>
+                <li class="item">
+                    <p>this is inside the paragraph </p>
+                </li>
+                <li>this will not get affected</li>
+            </ul>
+
+
+        </div>
+
+        <p>this is para 2</p>
+    </div>
+    <p>this is outer most para </p>
+</body>
+
+</html>
