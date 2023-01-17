@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 0;
+            padding:0;
+        }
+        
+        header::before {
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            background-image: url(https://cdn.pixabay.com/photo/2018/04/26/12/14/travel-3351825_1280.jpg);
+            opacity: 0.1;
+            
+        }
+
+        .navigation{
+            display: flex;
+            font-size:20px;
+
+        }
+
+        section{
+            height: 344px;
+            margin: 4px 25px;
+            border: 4px solid red;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        li{
+            list-style: none;
+            padding: 34px 25px;
+        }
+
+        section:before{
+            content: "this is before content"
+        }
+        p{
+            text-align: center;
+
+        }
+        h1{
+
+            font-size: 5rem;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <ul class="navigation">
+
+                <li class="items">Home</li>
+                <li class="items">About</li>
+                <li class="items">Contact us</li>
+                <li class="items">services</li>
+
+            </ul>
+        </nav>
+     
+    </header>
+
+    <section>
+
+        <h1>this is coding world</h1>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos necessitatibus minima, vel numquam maxime
+        repellendus dolorem ut sapiente eligendi odio ipsum cupiditate hic vitae unde? Aut, cum nulla rerum mollitia
+        pariatur voluptas perspiciatis animi?
+    </p>
+    </section>
+
+</body>
+
+</html>

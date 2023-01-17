@@ -23,17 +23,26 @@
 div li p { div ka andar li ka b andar jo p ha } */
 
 
+
+
+/* if p is right inside div then this css will be applied  */
+
         /* div > p {
     it will act only if div ka andar direct p or simple when div is the parent of p 
 } */
 
 
-      div + p {
+/* if p is right after div i.e p is the next sibiling of div */
+
+      /* div + p {
         div ka {
             div ka ppichla element p ho , 
             div ka previous element pa apply 
+            jiska decedent p ho 
         }
-      }
+      } */
+
+  /* if p is contained by any li which is contained by div  */
 
         div li p {
             color: yellow;

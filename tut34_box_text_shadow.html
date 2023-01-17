@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        .cards {
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            padding: 23px 12px;
+            background-color: cadetblue;
+            /* 
+            box-shadow: -10px -13px green; negative value for upper box-shadow: ;
+            box-shadow: 10px 13px green;   positive value for lower shadow */
+
+            /* third value is for blur radius eg 10px
+            box-shadow: -10px -13px 10px green; */
+
+            /* fourth value is for spread radius eg 30px  */
+            box-shadow: -10px -13px 10px 30px green;
+            box-shadow: -10px -13px green;
+
+
+/* here in rgba :4ht value is alpha , which decides about the text-decoration-thickness: ; */
+            box-shadow: -10px -13px 10px 30px rgba(15,10, 5, 0.5);
+/* inset matlab aandar ki side ,  */
+            box-shadow: inset 10px 10px 12px 10px;  
+
+/* multiple shadow  */
+            box-shadow:  -10px -13px red 10px 30px green;
+
+
+
+
+            /* box-shadow: :offset -x offset-y blur-radius spread-radius color ; */
+
+
+        }
+
+        .cards h1{
+            text-shadow: 5px 5px whitesmoke;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cards" id="card-1">
+            <h1>card1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolores molestias architecto nihil
+                exercitationem ut quis temporibus ducimus odio numquam provident aut ullam commodi corporis quasi
+                veritatis, cumque iusto illo assumenda corrupti blanditiis pariatur adipisci!</p>
+        </div>
+        <div class="cards" id="card-2">
+            <h1>card2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas qui ratione commodi magni ipsam,
+                veniam vel nam aliquid ea laudantium expedita eius autem, labore quas vitae quibusdam alias cum tenetur.
+                Sint nihil quae optio vel?</p>
+        </div>
+        <div class="cards" id="card-3">
+            <h1> cards3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quisquam ducimus asperiores repudiandae
+                corrupti eligendi perferendis, doloribus nisi? Assumenda, nam nulla maxime quos delectus sint aut
+                eveniet repellendus quibusdam quod corrupti deleniti dolorum quis quasi?</p>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

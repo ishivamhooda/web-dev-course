@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+.container{
+    display: block;
+    margin: auto;
+    width: 233px;
+
+
+}
+.item{
+display: block;
+}
+
+
+/* pseudo selector traget only attribute */
+input[type='text']{
+    padding: 23px;
+    border:2px solid red;
+}
+
+a[target]{
+    font-size: 44px;
+    color: aqua;
+}
+a[target='_self']{
+    font-size: 44px;
+    color:blueviolet;
+}
+
+li:nth-child(3){
+    color: red;
+}
+
+
+li:nth-child(2n){
+    color: green;
+}
+
+/* 
+li:nth-child(odd){
+    color: yellow;
+} */
+
+
+    </style>   
+</head>
+<body>
+   
+    <div class="container">
+
+        <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">go to facebook</a></h1>
+
+        <form class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+        <li class="item" id="item1">Item 1</li>
+        <li class="item" id="item2">Item 2</li>
+        <li class="item" id="item3">Item3</li>
+        <li class="item" id="item4">Item4</li>
+        <li class="item" id="item5">Item5</li>
+        <li class="item" id="item6">item6</li>
+        <li class="item" id="item7"> Item7</li>
+        <li class="item" id="item8">Item8</li>
+        <li class="item" id="item9">Item9</li>
+        <li class="item" id="item10">Item10</li>
+    </ul>
+    </div>
+    
+</body>
+</html>
