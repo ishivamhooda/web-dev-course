@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-template areas</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section aside aside';
+
+
+        }
+
+        .item {
+            border: 2px solid red;
+            background-color: aqua;
+
+
+
+        }
+
+        #navbar {
+            grid-area: navbar;
+
+        }
+
+        #section {
+            grid-area: section;
+
+        }
+
+        #aside {
+            grid-area: aside;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="navbar" class="item">
+            home contactus about
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae sequi dolorem odio tempora nobis
+            libero. Laudantium magni doloribus voluptatum voluptas iusto officia libero molestiae autem eaque
+            reiciendis? Aut, illo.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, reprehenderit sequi numquam ipsum impedit
+            necessitatibus a, illo voluptates non minus eos suscipit excepturi tenetur deleniti. Ad fugit dignissimos id
+            ex?
+        </div>
+        <!-- <div class="item">this is item no-1</div>
+        <div class="item">this is item no-2</div>
+        <div class="item">this is item no-3</div>
+        <div class="item">this is item no-4</div>
+        <div class="item">this is item no-5</div>
+        <div class="item">this is item no-6</div>
+        <div class="item">this is item no-7</div>
+        <div class="item">this is item no-8</div>
+        <div class="item">this is item no-9</div>
+        <div class="item">this is item no-10</div> -->
+    </div>
+
+
+
+</body>
+
+</html>
